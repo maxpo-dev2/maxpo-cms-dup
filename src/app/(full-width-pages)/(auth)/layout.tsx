@@ -1,6 +1,6 @@
 import GridShape from "@/components/common/GridShape";
 import ThemeTogglerTwo from "@/components/common/ThemeTogglerTwo";
-
+import authLogo from "@/../public/images/logo/auth-logo.png"
 import { ThemeProvider } from "@/context/ThemeContext";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,15 +23,13 @@ export default function AuthLayout({
               <div className="flex flex-col items-center max-w-xs">
                 <Link href="/" className="block mb-4">
                   <Image
-                    width={231}
+                    width={231}  
                     height={48}
-                    src="./images/logo/auth-logo.png"
+                    src={authLogo}
                     alt="Logo"
                   />
                 </Link>
-                <p className="text-center text-gray-400 dark:text-white/60">
-                  Free and Open-Source Tailwind CSS Admin Projects Template
-                </p>
+                
               </div>
             </div>
           </div>
