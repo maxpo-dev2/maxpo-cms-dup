@@ -46,6 +46,7 @@ const navItems: NavItem[] = [
     subItems: [
       { name: "Agenda", path: "/agenda", draft: false },
       { name: "Delegates", path: "/delegates", draft: false },
+      {name:"UTM Builder",path:"/utm",draft:false},
     ],
   },
   // {
