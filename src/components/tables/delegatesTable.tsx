@@ -29,9 +29,6 @@ interface Delegates {
     company: string;
     booth: string;
   };
-  team: {
-    images: string[];
-  };
   status: string;
   budget: string;
 }
@@ -47,13 +44,6 @@ const tableData: Delegates[] = [
       email: "z5o0o@example.com",
       company: "RevolutionEv",
       booth: "B",
-    },
-    team: {
-      images: [
-        "/images/user/user-22.jpg",
-        "/images/user/user-23.jpg",
-        "/images/user/user-24.jpg",
-      ],
     },
     budget: "3.9K",
     status: "Active",
@@ -143,23 +133,8 @@ export default function DelegatesTable() {
                   <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
                     {delegate.user.email}
                   </TableCell>
-                  <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
-                    <div className="flex -space-x-2">
-                      {delegate.team.images.map((teamImage, index) => (
-                        <div
-                          key={index}
-                          className="w-6 h-6 overflow-hidden border-2 border-white rounded-full dark:border-gray-900"
-                        >
-                          <Image
-                            width={24}
-                            height={24}
-                            src={teamImage}
-                            alt={`Team member ${index + 1}`}
-                            className="w-full"
-                          />
-                        </div>
-                      ))}
-                    </div>
+                 <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
+                    {delegate.user.booth}
                   </TableCell>
                   <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
                     <Badge

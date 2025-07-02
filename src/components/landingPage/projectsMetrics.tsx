@@ -23,7 +23,7 @@ export const ProjectsMetrics = () => {
         <div
           className={
             "rounded-2xl border  bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6" +
-            (item.selected ? " border-brand-500" : "border-gray-200")
+            (item.selected ? " border-brand-500 dark:text-brand-400" : "border-gray-200")
           }
           key={index}
         >
