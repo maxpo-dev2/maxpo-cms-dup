@@ -10,7 +10,10 @@ export default function SidebarWidget() {
       MAXPO CMS
       </h3>
       <p className="mb-4 text-gray-500 text-theme-sm dark:text-gray-400">
-       This UI Created By Maxpo Dev Team (Mazood,Sandeep)
+        Maxpo CMS is a powerful content management system designed to help you
+        manage your projects and content efficiently. Whether you're a developer,
+        designer, or content creator, Maxpo CMS provides the tools you need to
+        streamline your workflow and enhance collaboration.
       </p>
       <a
         href="/add-project"
